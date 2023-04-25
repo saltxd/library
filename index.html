@@ -18,25 +18,31 @@
   <main class="main-container">
     <button class="btn btn-add" id="addBookBtn">+ Add book</button>
     <div class="books-grid" id="booksGrid">
-        <form id="bookForm">
-            <label for="title">Title:</label>
-            <input type="text" id="title" required>
-            <br>
-            <label for="author">Author:</label>
-            <input type="text" id="author" required>
-            <br>
-            <label for="pages">Pages:</label>
-            <input type="number" id="pages" required>
-            <br>
-            <label for="read">Read:</label>
-            <input type="checkbox" id="read">
-            <br>
-            <button type="submit">Submit</button>
-            <button type="button" id="cancel-btn">Cancel</button>
-        </form>
     </div>
-    <div id="overlay" style="display: none;"></div>
-
+    <div id="overlay" style="display: none;">
+        <div id="form-container">
+            <form id="bookForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                <br>
+                <label for="author">Author:</label>
+                <input type="text" id="author" required>
+                <br>
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" required>
+                <br>
+                <div class="is-read">
+                  <label for="read">Read:</label>
+                  <input class="checkbox" type="checkbox" id="read">
+                </div>
+                <br>
+                <div class="form-btn">
+                  <button type="submit">Submit</button>
+                  <button type="button" id="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
   </main>
   <footer></footer>
     
