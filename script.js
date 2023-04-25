@@ -7,20 +7,20 @@
  //  }
 //}
 
+let myLibrary = [];
 
 function Book(title, author, pages){
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.info = function(){
-     return title + ' by ' + author + ', ' + pages + ' pages';
-    }
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
  }
  
- const theHobbit = new Book('The Hobbit','JRR Tolkein', '295')
- const harryPotter = new Book('Harry Potter', 'JK Rowling', '599')
- const gameOfThrones = new Book('Game of thrones', 'GRRM', '700')
- theHobbit.info()
- harryPotter.info()
- gameOfThrones.info()
- 
+function addBookToLibrary() {
+    let title = prompt("Enter the title of the book: ");
+    let author = prompt("Enter the name of the author: ");
+    let pages = parseInt(prompt("Enter the number of pages in the book:"));
+    let read = confirm("Have you read this book>");
+    let book = new Book(title, author, pages, read);
+    myLibrary.push(book);
+}

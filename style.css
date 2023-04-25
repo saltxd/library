@@ -1,8 +1,21 @@
 :root{
     --primary-dark: #0f172a;
-    --secondary-dark: #334155;
+    --secondary-dark: #1e293b;
+    --primary-light: #f8fafc;
 }
 
 body{
     background-color: var(--primary-dark);
 }
+
+/* Header */
+
+header{
+    color: var(--primary-light);
+    display: flex;
+    background-color: var(--secondary-dark);
+}
+
+/* Main */
+
+/* Footer */
