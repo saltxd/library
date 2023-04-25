@@ -18,6 +18,10 @@ header{
 
 /* Main */
 
+.main-container{
+    margin-top: 20px;
+}
+
 .book-card {
     display: flex;
     flex-direction: column;
@@ -28,30 +32,30 @@ header{
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
-  }
+}
   
-  .book-card h3 {
+.book-card h3 {
     margin-top: 0;
-  }
+}
   
-  .book-card p {
+.book-card p {
     margin: 5px 0;
-  }
+}
   
-  .book-card button {
+.book-card button {
     margin-top: auto;
-  }
+}
   
-  #book-list {
+#book-list {
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
-  #new-book-form {
+#new-book-form {
     margin: 20px 0;
-  }
+}
   
-  #overlay {
+#overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -115,5 +119,24 @@ header{
     display: flex;
     justify-content: space-around;
 }
+
+.btn-add {
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    border: 1px var(--primary-light) solid;
+    border-radius: 10px;
+  }
+
+  .btn-add:hover{
+    filter: brightness(90%);
+  }
+
+  .btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 /* Footer */
