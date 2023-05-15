@@ -7,13 +7,17 @@
 body{
     background-color: var(--primary-dark);
     color: var(--primary-light);
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* Header */
 
-header{
+.header{
     display: flex;
     background-color: var(--secondary-dark);
+    width: 100%;
+    padding-left: 8px;
 }
 
 /* Main */
